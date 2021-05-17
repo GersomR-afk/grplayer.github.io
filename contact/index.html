@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The website of G_Rplayer, a java dev and a backend expert.">
+    <meta name="keywords" content="Java, Backend, G_Rplayer">
+    <meta name="author" content="G_Rplayer">
+    <title>G_Rplayer</title>
+
+    <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+</head>
+<body>
+    <section class="container-fluid d-flex h-100 flex-column">
+        <div class="row d-flex align-items-center">
+            <div class="col-sm"></div>
+            <div class="col-sm" style="text-align: center">
+                <div style="margin-top: 15%"></div>
+                <img src="/img/profile.png" class="profile"><br />
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-light contact-btn" data-bs-toggle="modal" data-bs-target="#contactModel">
+                    Contact
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="contactModel" tabindex="-1" aria-labelledby="contactModelLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="color:#000000">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="contactModelLabel">Contact</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <strong>
+                                    <div id="email"></div><br />
+                                    <strong>
+                                        I'm putting it here, so it is hidden for bots :)
+                                    </strong>
+                                </strong>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+    </section>
+    <footer class="bg-dark text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © Copyright G_Rplayer
+        </div>
+        <script>
+            document.querySelector(".contact-btn").addEventListener("click", function () {
+                document.querySelector("#email").innerHTML = "<a href=\"mailto:grplayerwastaken@gmail.com?subject=My awesome subject\" class=\"text-body\">Email me</a>";
+            });
+        </script>
+    </footer>
+</body>
+</html>
